@@ -311,5 +311,3 @@ app.post('/getcart', fetchUser, async (req, res) => {
   let userData = await Users.findOne({ _id: req.user.id })
   res.json(userData.cartData)
 })
-
-// mongodb+srv://cripintort:gGDu1cx4LpiezW9G@cluster0.rifehae.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
