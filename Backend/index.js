@@ -13,10 +13,6 @@ app.use(express.json())
 app.use(cors())
 
 // Database Connection With MongoDB
-// mongoose.connect(
-//   'mongodb+srv://cripintort:gGDu1cx4LpiezW9G@cluster0.rifehae.mongodb.net/E-commerce-Ropa'
-// )
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
